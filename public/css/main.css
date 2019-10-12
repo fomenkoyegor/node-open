@@ -1,0 +1,40 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.posts{
+    padding: 1em;
+}
+
+
+.post{
+    box-shadow: 1px 1px 15px;
+    margin-bottom: 1em;
+    padding: 1em;
+    animation: show 0.45s linear;
+}
+
+@keyframes show {
+    from{
+        transform: translateX(-10px) translateY(-5px);
+    }
+}
+
+.post__title{
+    font-weight: bold;
+}
+
+.post__body{
+    border: 1px dotted;
+    padding: 0.4em;
+}
+
+
+.post__controls{
+    padding: 0.4em;
+    display: flex;
+    justify-content: flex-end;
+}
